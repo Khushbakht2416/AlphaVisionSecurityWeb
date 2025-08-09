@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Http\Controllers\frontend;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class ServicesController extends Controller
+{
+    public function index(){
+        return view('frontend.services');
+    }
+
+    public function liveCCTVMonitoring() {
+        return view('frontend.live-cctv-monitoring');
+    }
+
+    public function liveAlarmMonitoring() {
+        return view('frontend.live-alarm-monitoring');
+    }
+
+    public function installation() {
+        return view('frontend.installation');
+    }
+}

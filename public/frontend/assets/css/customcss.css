@@ -1,0 +1,984 @@
+/* cctv red container css start */
+.icons-section {
+    padding: 20px 0;
+    /* Adds space between sections */
+}
+
+.responsive-container {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    /* Default height */
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    /* Space from the section above */
+    position: relative;
+    /* Ensure proper alignment */
+}
+
+.responsive-text {
+    font-size: clamp(16px, 3.5vw, 26px);
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .icons-section {
+        padding: 20px 0;
+        /* Reduced space */
+    }
+
+    .responsive-container {
+        height: 60px;
+        /* Adjusted height */
+        margin-top: 10px;
+        /* Extra space */
+    }
+
+    .responsive-text {
+        font-size: 14px;
+        /* Adjusted text size */
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+    .responsive-container {
+        height: 60px;
+        margin-top: 10px;
+        /* Extra space */
+    }
+
+    .responsive-text {
+        font-size: 14px;
+    }
+}
+
+/* cctv red container css end */
+
+
+
+/* banner section 1*/
+.home-banner-section1 {
+    background: url('../images/home-banner-new.png') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Dark Overlay */
+.home-banner-section1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner-container-box1 {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+/* 🚀 Make Text Responsive */
+.home-banner-text1 h3 {
+    font-size: clamp(1.6rem, 4vw, 2.10rem);
+    /* Auto scales with screen */
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.banner-paragraph1 {
+    font-size: clamp(0.6rem, 2.2vw, 1.0rem);
+    /* Auto scales */
+    line-height: 1.4;
+}
+
+/* 🚀 Responsive Button */
+.banner-btn1 a {
+    display: inline-block;
+    padding: 9px 16px;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    /* Auto scales */
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+/* 🔹 RESPONSIVE FIXES */
+@media (max-width: 768px) {
+
+    /* Tablets */
+    .home-banner-section1 {
+        min-height: auto;
+        padding: 90px 0;
+    }
+
+    .home-banner-text1 {
+        padding: 10px 0;
+        /* Reduce padding */
+    }
+
+    .home-banner-text1 h3 {
+        font-size: 1.2rem;
+        /* Decrease text size */
+        line-height: 1.1;
+        /* Reduce gap between lines */
+        margin-bottom: 5px;
+        /* Reduce space below text */
+    }
+
+    .banner-paragraph1 {
+        font-size: 0.6rem;
+        /* Make paragraph smaller */
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .banner-btn1 a {
+        font-size: 0.85rem;
+        padding: 5px 10px;
+        /* Make button smaller */
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Small Mobile */
+    .home-banner-section1 {
+        min-height: auto;
+        padding: 90px 0;
+    }
+
+    .home-banner-text1 {
+        padding: 10px 0;
+        /* Reduce padding */
+    }
+
+    .home-banner-text1 h3 {
+        font-size: 0.7rem;
+        /* Decrease text size */
+        line-height: 1.1;
+        /* Reduce gap between lines */
+        margin-bottom: 5px;
+        /* Reduce space below text */
+    }
+
+    .banner-paragraph1 {
+        font-size: 0.55rem;
+        /* Make paragraph smaller */
+        line-height: 1.2;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    .banner-btn1 a {
+        font-size: 0.85rem;
+        padding: 3px 7px;
+        /* Make button smaller */
+    }
+}
+
+@media (max-width: 400px) {
+
+    /* Extra Small Devices */
+    .home-banner-section1 {
+        padding: 25px 0;
+    }
+
+    .home-banner-text1 {
+        padding: 10px 0;
+        /* Reduce padding */
+    }
+
+    .home-banner-text1 h3 {
+        font-size: 0.5rem;
+        /* Decrease text size */
+        line-height: 1.1;
+        /* Reduce gap between lines */
+        margin-bottom: 5px;
+        /* Reduce space below text */
+    }
+
+    .banner-paragraph1 {
+        font-size: 0.35rem;
+        /* Make paragraph smaller */
+        line-height: 1.2;
+        margin-bottom: 10px;
+        margin-left: 30px;
+    }
+
+    .banner-btn1 a {
+        font-size: 0.85rem;
+        padding: 2px 5px;
+        /* Make button smaller */
+    }
+}
+
+/* Custom input fields with border-radius */
+.custom-input {
+    border-radius: 10px;
+    /* Rounded edges */
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* Custom red button aligned to the left */
+.custom-btn {
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: none;
+}
+
+.custom-btn:hover {
+    background: darkred;
+    transform: scale(1.05);
+}
+
+/* Align labels to the left on mobile view */
+@media (max-width: 768px) {
+    .form-label {
+        display: block;
+        text-align: left;
+    }
+}
+
+/*  */
+.custom-input {
+    border-radius: 10px;
+    /* Rounded edges */
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.custom-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Custom red button */
+.custom-btn {
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: none;
+}
+
+.custom-btn:hover {
+    background: rgb(198, 121, 121);
+    transform: scale(1.05);
+}
+
+.red-container {
+    background: linear-gradient(to right, #ff0000, #d40000);
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+
+.gradient-border {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    background: linear-gradient(135deg, #ff00b3, #0080ff);
+    padding: 3px;
+}
+
+.inner-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(34, 33, 33);
+    /* Background same as body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle i {
+    font-size: 40px;
+    color: white;
+}
+
+.heading-text {
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    margin-top: 10px;
+}
+
+.number-text {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .gradient-border {
+        width: 120px;
+        height: 120px;
+    }
+
+    .inner-circle i {
+        font-size: 30px;
+    }
+
+    .heading-text {
+        font-size: 12px;
+    }
+
+    .number-text {
+        font-size: 22px;
+    }
+}
+
+.red-container {
+    background: linear-gradient(to right, #ff0000, #d40000);
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+
+.gradient-border {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    background: linear-gradient(135deg, #2f157c, #9b3b3b);
+    padding: 3px;
+}
+
+.inner-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(34, 33, 33);
+    /* Background same as body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle i {
+    font-size: 40px;
+    color: white;
+}
+
+.heading-text {
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    margin-top: 10px;
+}
+
+.number-text {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .gradient-border {
+        width: 120px;
+        height: 120px;
+    }
+
+    .inner-circle i {
+        font-size: 30px;
+    }
+
+    .heading-text {
+        font-size: 12px;
+    }
+
+    .number-text {
+        font-size: 22px;
+    }
+}
+
+.custom-rounded-btn {
+    border-radius: 30px !important;
+}
+
+.bullet-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.bullet-text {
+    font-weight: 600;
+    color: #212529;
+}
+
+.footer-section {
+    padding-top: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.full-width-section {
+    width: 100%;
+    height: 80px;
+    background-color: #ba1818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Responsive text size */
+.full-width-section h3 {
+    font-size: 1.6rem;
+    /* Default size */
+}
+
+/* Adjust text size for smaller screens */
+@media (max-width: 768px) {
+    .full-width-section {
+        height: 120px;
+        /* Reduce height on smaller screens */
+    }
+
+    .full-width-section h3 {
+        font-size: 1.4rem;
+        /* Smaller text */
+    }
+}
+
+
+/* banner section 3 */
+.home-banner-section3 {
+    background: url('../images/cctv-monitoring-banner.png') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Optional Overlay */
+.home-banner-section3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Adjust for dark/light overlay */
+    z-index: 1;
+}
+
+/* 🔹 RESPONSIVE FIXES */
+@media (max-width: 768px) {
+
+    /* Tablets */
+    .home-banner-section3 {
+        min-height: auto;
+        padding: 90px 0;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Small Mobile */
+    .home-banner-section3 {
+        min-height: auto;
+        padding: 90px 0;
+    }
+}
+
+@media (max-width: 400px) {
+
+    /* Extra Small Devices */
+    .home-banner-section3 {
+        padding: 25px 0;
+    }
+}
+
+.banner-container-box {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+/* banner section 3 end */
+
+/* banner section 2 start */
+.home-banner-section2 {
+    background: url('../images/pricing-bottom-banner.png') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+/* Dark Overlay */
+.home-banner-section2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* 🔹 RESPONSIVE FIXES */
+@media (max-width: 768px) {
+
+    /* Tablets */
+    .home-banner-section2 {
+        min-height: auto;
+        padding: 90px 0;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Small Mobile */
+    .home-banner-section2 {
+        min-height: auto;
+        padding: 90px 0;
+    }
+}
+
+@media (max-width: 400px) {
+
+    /* Extra Small Devices */
+    .home-banner-section2 {
+        padding: 25px 0;
+    }
+}
+
+/* banner section 2 end */
+
+
+/* banner section 4 */
+.home-banner-4 {
+    background: url('../images/live-cctv-bottom-banner.png') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Dark Overlay */
+.home-banner-section4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* 🔹 RESPONSIVE FIXES */
+@media (max-width: 768px) {
+
+    /* Tablets */
+    .home-banner-section4 {
+        min-height: auto;
+        padding: 90px 0;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Small Mobile */
+    .home-banner-section4 {
+        min-height: auto;
+        padding: 90px 0;
+    }
+}
+
+@media (max-width: 400px) {
+
+    /* Extra Small Devices */
+    .home-banner-section4 {
+        padding: 25px 0;
+    }
+}
+
+/* banner section 4 end */
+
+
+
+
+
+/* Custom input fields with border-radius */
+.custom-input {
+    border-radius: 10px;
+    /* Rounded edges */
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* Custom red button aligned to the left */
+.custom-btn {
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: none;
+}
+
+.custom-btn:hover {
+    background: darkred;
+    transform: scale(1.05);
+}
+
+/* Align labels to the left on mobile view */
+@media (max-width: 768px) {
+    .form-label {
+        display: block;
+        text-align: left;
+    }
+}
+
+/*  */
+.custom-input {
+    border-radius: 10px;
+    /* Rounded edges */
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.custom-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Custom red button */
+.custom-btn {
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: none;
+}
+
+.custom-btn:hover {
+    background: rgb(198, 121, 121);
+    transform: scale(1.05);
+}
+
+.red-container {
+    background: linear-gradient(to right, #ff0000, #d40000);
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+
+.gradient-border {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    background: linear-gradient(135deg, #ff00b3, #0080ff);
+    padding: 3px;
+}
+
+.inner-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(34, 33, 33);
+    /* Background same as body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle i {
+    font-size: 40px;
+    color: white;
+}
+
+.heading-text {
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    margin-top: 10px;
+}
+
+.number-text {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .gradient-border {
+        width: 120px;
+        height: 120px;
+    }
+
+    .inner-circle i {
+        font-size: 30px;
+    }
+
+    .heading-text {
+        font-size: 12px;
+    }
+
+    .number-text {
+        font-size: 22px;
+    }
+}
+
+/* brand section */
+.brand-section {
+    padding: 40px 20px;
+}
+
+.brand-card {
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.brand-card img {
+    max-height: 70px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+
+/* company autoplay slider */
+.logo-carousel {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 15px 0;
+    background: #f8f9fa;
+    margin-bottom: 10px;
+}
+
+.logo-carousel .logos {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    animation: scroll 10s linear infinite;
+}
+
+.logo-carousel .logos img {
+    height: 40px;
+    /* Adjust logo height */
+    width: auto;
+    opacity: 0.8;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.logo-carousel .logos img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logo-carousel .logos:hover {
+    animation-play-state: paused;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        max-height: 35px;
+        width: auto;
+    }
+
+    .home-banner-text1 h3 {
+        font-size: 22px;
+    }
+
+    .home-banner-text1 p {
+        font-size: 12px;
+    }
+
+    .home-banner-text1 .banner-btn1 a {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .notshowinmob {
+        display: none;
+    }
+
+}
+
+.redlight-dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*  */
+.chat-bubble-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1000;
+}
+
+.chat-bubble-text {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 12px;
+    max-width: 240px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: relative;
+}
+
+.chat-bubble-text::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #000;
+}
+
+.floating-call-button-custom {
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.chat-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 70%;
+    margin-right: 10px;
+}
+
+.close-chat-text {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
